@@ -68,8 +68,10 @@
     .then(() => {
   alert("(Loo siktu bidu nange🤭🤭 ");
 })
-    .catch(() => alert("Error"));
-  });
+    .catch((error) => {
+    console.error("Submission error:", error);
+    alert("Connection failed! Check your Apps Script URL and deployment.");
+});
   </script>
 
 </body>
